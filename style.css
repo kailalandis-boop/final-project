@@ -260,6 +260,12 @@ svg[Attributes Style] {
     border-image: none;
 }
 
+.menu--open .menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
 @media (max-width: 1024px) {
     .nav__links {
         display: none;
