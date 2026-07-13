@@ -1297,3 +1297,30 @@ footer {
     max-width: 320px;
   }
 }
+
+@media (max-width: 1024px) {
+  .quality__description {
+    margin-right: 32px;
+  }
+
+  .quality__img--wrapper {
+    margin: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  #quality .row {
+    flex-direction: column-reverse;
+  }
+
+  .quality__description,
+  .quality__img--wrapper {
+    width: 100%;
+    max-width: 448px;
+  }
+
+  .quality__description {
+    margin: 48px 0 0;
+    text-align: center;
+  }
+}
