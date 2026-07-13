@@ -659,6 +659,20 @@ figure.header__img--wrapper {
     height: 20px;
 }
 
+.values__description,
+.values__img--wrapper {
+  width: 50%;
+}
+
+.values__img--wrapper {
+  height: auto;
+}
+
+.values__img {
+  width: 100%;
+  height: auto;
+}
+
 /* PRICING */
 
 #pricing .row {
@@ -1350,5 +1364,44 @@ footer {
 
   .step {
     text-align: left;
+  }
+}
+
+@media (max-width: 1024px) {
+  .values__description {
+    padding-right: 32px;
+  }
+
+  .values__list {
+    flex-direction: column;
+  }
+
+  .value:nth-of-type(1) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  #values .row {
+    flex-direction: column-reverse;
+  }
+
+  .values__description,
+  .values__img--wrapper {
+    width: 100%;
+    max-width: 448px;
+  }
+
+  .values__description {
+    padding: 48px 0 0;
+    text-align: center;
+  }
+
+  .value {
+    align-items: center;
+  }
+
+  .value__para {
+    max-width: 320px;
   }
 }
