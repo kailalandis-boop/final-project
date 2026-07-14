@@ -571,7 +571,7 @@ figure.header__img--wrapper {
 }
 
 .values__description, 
-.values__img {
+.values__img--wrapper {
     width: 50%;
 }
 
@@ -629,8 +629,8 @@ figure.header__img--wrapper {
 }
 
 .values__img {
-    width: 750px;
-    height: 500px;
+    width: 100%;
+    display: block;
 }
 
 .value__name {
@@ -1403,5 +1403,24 @@ footer {
 
   .value__para {
     max-width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  #values .row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .values__description,
+  .values__img--wrapper {
+    width: 100%;
+    max-width: 448px;
+  }
+
+  .values__description {
+    margin-top: 64px;
+    padding: 0;
+    text-align: center;
   }
 }
