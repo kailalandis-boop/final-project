@@ -620,12 +620,16 @@ figure.header__img--wrapper {
 }
 
 .values__img--wrapper {
+    width: 50%;
+}
+
+.value__img--wrapper {
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 750px;
-    height: 750px;
+    width: 36px;
+    height: 36px;
 }
 
 .values__img {
