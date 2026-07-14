@@ -1380,11 +1380,6 @@ footer {
     flex-direction: column;
   }
 
-  .value:nth-of-type(1) {
-    margin-right: 0;
-  }
-}
-
 @media (max-width: 640px) {
   #values .row {
     flex-direction: column-reverse;
@@ -1401,12 +1396,25 @@ footer {
     text-align: center;
   }
 
-  .value {
-    align-items: center;
-  }
-
   .value__para {
     max-width: 320px;
+  }
+
+  .value {
+    width: 100%;
+    max-width: 320px;
+    align-items: center;
+    margin: 32px auto 0;
+    text-align: center;
+  }
+
+  .value:nth-of-type(1) {
+    margin: 32px auto 0;
+  }
+
+  .value__title {
+    width: 100%;
+    justify-content: center;
   }
 }
 
