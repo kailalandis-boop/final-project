@@ -168,8 +168,6 @@ svg[Attributes Style] {
 }
 
 .nav__link:hover {
-    text-decoration: underline #6415ff;
-    text-decoration-thickness: 2px;
     transition: 300ms ease;
 }
 
