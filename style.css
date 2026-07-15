@@ -159,6 +159,13 @@ svg[Attributes Style] {
     font-weight: 600;
     letter-spacing: 0.35px;
     margin: 0 24px;
+    
+}
+
+.nav__link:hover {
+    text-decoration: underline #6415ff;
+    text-decoration-thickness: 2px;
+    transition: 300ms ease;
 }
 
 .login {
