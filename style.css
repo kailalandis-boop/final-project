@@ -7,6 +7,10 @@
     color: #243e63;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     margin-bottom: 96px;
 }
@@ -159,12 +163,11 @@ svg[Attributes Style] {
     font-weight: 600;
     letter-spacing: 0.35px;
     margin: 0 24px;
-    
+    position: relative;
+    display: inline-block;
 }
 
 .nav__link:hover {
-    text-decoration: underline #6415ff;
-    text-decoration-thickness: 2px;
     transition: 300ms ease;
 }
 
@@ -183,21 +186,21 @@ svg[Attributes Style] {
 }
 
 .nav__link--primary::after {
-    content: "";
-    width: 0px;
-    height: 0px;
+    display: none;
 }
 
 .nav__link::after {
     content: "";
     position: absolute;
     left: 0px;
-    bottom: -6px;
+    bottom: -8px;
     height: 2px;
     width: 100%;
     opacity: 0;
     background: rgb(100, 21, 255);
-    transition: 300ms;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 300ms ease;
 }
 
 .btn__menu {
