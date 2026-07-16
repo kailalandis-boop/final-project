@@ -1236,13 +1236,14 @@ footer {
     line-height: 1.5;
     font-weight: 500;
     position: relative;
+    border-bottom: 2px solid transparent;
     cursor: pointer;
-    transition: all 300ms ease;
+    transition: border-color 300ms ease;
 }
 
 .footer__column--link:hover {
     line-height: 1.5;
-    border-bottom: 2px solid;
+    border-bottom-color: rgb(247, 250, 252);
 }
 
 .footer__divider {
